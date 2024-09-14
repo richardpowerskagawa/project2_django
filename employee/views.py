@@ -6,6 +6,7 @@ from .models import Employee
 class IndexView(generic.ListView):
     model = Employee
     paginate_by = 1
+    # template_name = 'your_custom_template.html'
 
     def get_context_data(self):
         """テンプレートへ渡す辞書の作成"""
